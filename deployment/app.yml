@@ -47,7 +47,7 @@ spec:
                     - local-b
       containers:
         - name: main
-          image: learning/app:v1
+          image: 480402751723.dkr.ecr.us-west-2.amazonaws.com/learning/app:v1
           imagePullPolicy: Always
           volumeMounts:
             - name: supervisor-server
