@@ -515,7 +515,7 @@ resource "aws_eks_cluster" "eks_ct" {
       aws_subnet.vpc_eks_nd_sn_2.id
     ]
   }
-  version = 1.24
+  version = 1.25
   tags = {
     Name = "eks-ct"
     Environment = var.env
@@ -556,7 +556,7 @@ resource "aws_eks_node_group" "eks_gnr_ng" {
   update_config {
     max_unavailable_percentage = 30
   }
-  version = 1.24
+  version = 1.26
   tags = {
     Name = "eks-gnr-ng"
     Environment = var.env
